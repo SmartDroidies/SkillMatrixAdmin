@@ -1,0 +1,11 @@
+{
+    "/course-api": {
+        "target": "https://roj18241cb.execute-api.ap-south-1.amazonaws.com/Prod/",
+        "secure": true,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/course-api": ""
+        }
+    }
+}
