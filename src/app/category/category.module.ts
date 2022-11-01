@@ -17,7 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     CategoryRoutingModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
   ]
 })
 export class CategoryModule { }
