@@ -317,3 +317,21 @@
 <footer>
   <app-footer></app-footer>
 </footer>
+
+<!-- Loading spinner -->
+<div *ngIf="loading" class="loading-container flex-content-center">
+  <mat-progress-spinner
+    color="primary"
+    mode="indeterminate">
+  </mat-progress-spinner>
+</div>
+
+<!-- the application -->
+<div class="site-container">
+  <div class="site-header">
+    <app-header></app-header>
+  </div>
+  <div class="site-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

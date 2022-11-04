@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { CategoryModule } from './category/category.module';
 import { CourseModule } from './course/course.module';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CourseModule } from './course/course.module';
     SharedModule,
     CategoryModule,
     CourseModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
