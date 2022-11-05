@@ -5,19 +5,12 @@ import { Component } from '@angular/core';
 
 
 export interface Category {
-  code: number;
-  group: string;
-  description: string;
-  weight: number;
+  title: string;
+  code: string;
+  order: number;
+  // weight: number;
   active: boolean;
 }
-
-const Category_Data: Category[] = [
-  { code: 101, group: 'Academics', description: 'Courses under academics', weight: 1, active: true },
-  { code: 102, group: 'Arts', description: 'Learn some Arts', weight: 1, active: true },
-  { code: 101, group: 'Fitness', description: 'Keep yourself fit and healthy', weight: 1, active: true },
-  { code: 101, group: 'Sports', description: 'Sports keeps us healthy too', weight: 1, active: true }
-];
 
 @Component({
   selector: 'app-list-category',
@@ -26,14 +19,12 @@ const Category_Data: Category[] = [
 })
 
 export class ListCategoryComponent implements OnInit {
-  displayedColumns: string[] = ['code', 'group', 'description', 'weight', 'active'];
-  categories: Category[] = [];
-  dataSource = Category_Data;
+  displayedColumns: string[] = ['title','code', 'order', 'active'];
+  // categories: Category[] = [];
+  dataSource: any;
   // dataSource: MatTableDataSource<Category> = new MatTableDataSource(this.categories);
   // categoriesLoader: Loader = new Loader();
   refresh: any;
-  CategoryService: any;
-
 
   constructor(private httpClient: HttpClient) { }
 
@@ -46,6 +37,7 @@ export class ListCategoryComponent implements OnInit {
     this.httpClient.get("/course-api/category")
       .subscribe(data => {
         console.log("Resoponse received", data);
+        this.dataSource = data;
       });
     // this.categoriesLoader.setLoading(true);
 
