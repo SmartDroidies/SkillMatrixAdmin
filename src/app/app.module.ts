@@ -16,6 +16,7 @@ import { CourseModule } from './course/course.module';
     BrowserAnimationsModule,
     SharedModule,
     CategoryModule,
+
     CourseModule,
     HttpClientModule,
   ],
