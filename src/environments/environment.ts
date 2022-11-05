@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  courseListUrl: '/course-api'
+  courseListUrl: '/course-api',
 };
 
 /*

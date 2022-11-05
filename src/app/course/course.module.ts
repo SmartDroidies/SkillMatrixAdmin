@@ -4,16 +4,8 @@ import { ListCourseComponent } from './pages/list-course/list-course.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { CourseRoutingModule } from './course-routing.module';
 
-
-
 @NgModule({
-  declarations: [
-    ListCourseComponent
-  ],
-  imports: [
-    AppRoutingModule,
-    CommonModule,
-    CourseRoutingModule
-  ]
+  declarations: [ListCourseComponent],
+  imports: [AppRoutingModule, CommonModule, CourseRoutingModule],
 })
-export class CourseModule { }
+export class CourseModule {}

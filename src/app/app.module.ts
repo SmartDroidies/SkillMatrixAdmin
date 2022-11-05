@@ -9,9 +9,7 @@ import { CategoryModule } from './category/category.module';
 import { CourseModule } from './course/course.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -19,9 +17,9 @@ import { CourseModule } from './course/course.module';
     SharedModule,
     CategoryModule,
     CourseModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
