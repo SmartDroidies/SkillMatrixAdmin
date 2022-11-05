@@ -23,8 +23,6 @@ export class ListCategoryComponent implements OnInit {
   // categoriesLoader: Loader = new Loader();
   refresh: any;
 
-  dummy: any = 'mummy';
-
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit() {
