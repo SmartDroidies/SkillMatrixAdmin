@@ -1,16 +1,21 @@
 export class Category {
-    code!: number;
-    group!: string;
-    description!: string;
-    active!: boolean;
-    weight!: number;
+  code!: string;
+  order!: number;
+  title!: string;
+  active!: boolean;
+  // weight!: number;
 
-    constructor(code: number, group: string, description: string, weight: number, active: boolean) {
-        this.code = code;
-        this.group = group;
-        this.description = description;
-        this.weight = weight;
-        this.active = active;
-    }
-
+  constructor(
+    code: string,
+    order: number,
+    title: string,
+    weight: number,
+    active: boolean
+  ) {
+    this.code = code;
+    this.order = order;
+    this.title = title;
+    // this.weight = weight;
+    this.active = active;
+  }
 }
