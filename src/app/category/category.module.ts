@@ -16,6 +16,4 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule,
   ],
 })
-export class CategoryModule {
-  dummy = 'Mummy';
-}
+export class CategoryModule {}
