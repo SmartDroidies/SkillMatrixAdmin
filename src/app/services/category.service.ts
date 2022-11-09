@@ -17,20 +17,20 @@ export class CategoryService {
 
   getCategories(): Observable<Category[]> {
     //FIXME - Better way of reading the base URL by environment
-    return this.http.get<Category[]>(environment.courseListUrl + '/category');
+    return this.http.get<Category[]>(environment.courseUrl + '/category');
   }
 
   getCategory(code: string): Observable<Category> {
     let params = new HttpParams();
     params = params.append('code', code);
-    return this.http.get<Category>(environment.courseListUrl + '/category', {
+    return this.http.get<Category>(environment.courseUrl + '/category', {
       params: params,
     });
   }
 
   updateCategory(category: Category): Observable<any> {
     return this.http.post<Category>(
-      environment.courseListUrl + '/category',
+      environment.courseUrl + '/category',
       category
     );
   }
