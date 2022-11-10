@@ -1,0 +1,60 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.input-control {
+  width: 250px;
+}
+
+.form-field {
+  margin: 0px 20px;
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+}
+
+.form-row-field {
+  margin: 0px 20px;
+  flex-direction: row;
+  display: flex;
+  flex-grow: 1;
+}
+
+.radio-button {
+  margin: 0px 10px;
+}
+
+.form-controls {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+}
+
+.field-label {
+  margin-right: 15px;
+  width: 200px;
+  color: black;
+}
+
+.form-head {
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+}
+
+.form-controls {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  margin: 0px 10px;
+}
