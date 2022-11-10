@@ -35,7 +35,6 @@ export class ListCategoryComponent implements OnInit {
       console.log('Resoponse received', data);
       this.dataSource = data;
     });
-    // this.categoriesLoader.setLoading(true);
 
     //Collect the categories from service
     // this.CategoryService

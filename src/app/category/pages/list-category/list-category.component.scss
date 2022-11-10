@@ -11,10 +11,21 @@
 .section-header {
   display: flex;
   flex-direction: row;
+  color: black;
 }
 
 table {
   width: 800px;
+  background-color: azure;
+  color: black;
+}
+
+.mat-cell {
+  color: black;
+}
+
+.mat-header-cell {
+  color: black;
 }
 
 .header-search {

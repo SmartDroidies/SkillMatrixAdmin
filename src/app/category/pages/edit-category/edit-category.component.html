@@ -1,0 +1,71 @@
+<form [formGroup]="categoryForm" (ngSubmit)="onSubmit()" class="input-form">
+  <h4 appearance="fill" class="form-head">Create new category</h4>
+
+  <mat-form-field appearance="fill" class="form-field">
+    <mat-label for="code" class="field-label">Code </mat-label>
+    <input
+      matInput
+      id="code"
+      type="text"
+      formControlName="code"
+      placeholder="Code"
+      class="input-control"
+    />
+  </mat-form-field>
+
+  <!-- <mat-form-field appearance="fill" class="form-field">
+        <mat-label for="order" class="field-label">Order </mat-label>
+        <mat-select id="order" formControlName="group" placeholder="Order">
+            <mat-option *ngFor="let grp of groups" [value]="grp.order">
+                {{grp.order}} - {{grp.order}} 
+            </mat-option>
+        </mat-select>
+    </mat-form-field> -->
+
+  <mat-form-field appearance="fill" class="form-field">
+    <mat-label for="title" class="field-label">Description </mat-label>
+    <input
+      matInput
+      id="title"
+      type="text"
+      formControlName="title"
+      placeholder="Title"
+      class="input-control"
+    />
+  </mat-form-field>
+
+  <!-- <mat-form-field appearance="fill" class="form-field">
+        <mat-label for="active" class="field-label">Active </mat-label>
+        <input matInput id="active" type="text" formControlName="active" placeholder="Weight" class="input-control">
+    </mat-form-field> -->
+
+  <mat-radio-group
+    id="active"
+    formControlName="active"
+    appearance="fill"
+    class="form-row-field"
+  >
+    <mat-radio-button value="true" class="radio-button"
+      >Active</mat-radio-button
+    >
+    <mat-radio-button value="false" class="radio-button"
+      >In Active</mat-radio-button
+    >
+  </mat-radio-group>
+
+  <div appearance="fill" class="form-controls">
+    <button mat-raised-button color="primary" [routerLink]="'/category/list'">
+      Cancel
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="!categoryForm.valid"
+    >
+      Submit
+    </button>
+  </div>
+
+  <!-- <div >{{categoryForm.value | json}} </div> -->
+</form>

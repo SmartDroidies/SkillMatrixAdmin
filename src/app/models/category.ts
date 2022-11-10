@@ -9,7 +9,7 @@ export class Category {
     code: string,
     order: number,
     title: string,
-    weight: number,
+    //weight: number,
     active: boolean
   ) {
     this.code = code;
